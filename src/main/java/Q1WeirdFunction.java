@@ -12,10 +12,12 @@ public class Q1WeirdFunction {
            return n;
         }
      }
+
+     // a comment
   
      public static int fIterative(int n) {
         
-        
+
         
         return n;
      }
