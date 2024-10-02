@@ -16,9 +16,29 @@ public class Q1WeirdFunction {
      // a comment
   
      public static int fIterative(int n) {
-        
-
-        
-        return n;
+      int temp = n; 
+      int result = n; 
+      while ( temp >= 3) {
+         if (temp < 3) 
+            return n;
+         else {
+            if (n - 1 < 3)
+               result += n;
+            else 
+               result += n - 1;
+            
+            if (n - 2 < 3)
+               result += 2 * n;
+            else 
+               result += 2 * (n - 2);
+            
+            if (n - 3 < 3)
+               result += 3 * n;
+            else 
+               result += 3 * (n - 3);
+         }
+         temp -= 1;
+      }
+      return result;
      }
 }
